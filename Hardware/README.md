@@ -20,4 +20,4 @@ This was the most difficult part of the project and it had the most trial and er
 * I wanted to get more experience in PCB fabrication.
 * I didn't want to spend time I spent a little bit more than a week trying to fabricate the PCB and I kept failing each time until it worked, and in the end I still had to use a bodge wire because one of the traces on the PCB was discontinuous because it's too thin.
 You can see all the failed attempts below,
-
+<img width="360" height="640" alt="pcb_attempts" src="https://github.com/user-attachments/assets/baf1bd95-8e51-43e6-80a2-569e562ea60b" />
