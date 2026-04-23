@@ -1,6 +1,6 @@
 # Design Files
 
-The hardware design files currently available are the KiCAD files. The enclosure has not been designed yet.
+The hardware design files currently available are the KiCAD files and the BOM. The enclosure has not been designed yet.
 
 ## Notes and Instructions
 * It is recommended to read the `/Hardware/README.md` file to learn from my mistakes when milling the PCB.
