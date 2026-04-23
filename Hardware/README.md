@@ -36,10 +36,10 @@ Here are some photos and videos of the PCB design and fabrication stages, enjoy 
 <img alt="KiCAD PCB" src="../Media/kicad_pcb.jpeg" />
 <img alt="modsproject CNC simulation" src="../Media/mods_cnc_simulation.jpeg" />
 <img alt="FlatCAM" src="../Media/flatcam.jpeg" />
-<video alt="First PCB attempt" src="../Media/first_pcb_attempt.mp4"></video>
-<video alt="PCB drilling" src="../Media/pcb_drilling.mp4"></video>
+https://github.com/user-attachments/assets/e8d4051a-8b4d-4367-8267-e0d7fdcb9eb9
+https://github.com/user-attachments/assets/0141d8ae-49af-4be1-b656-2b18e7af8213
 
 ## Soldering
 I am stuck on this part because I have exams soon so I don't have enough time to go to the makerspace and solder the board. But I will continue after the exams immediately. But the progress I have made is that I soldered the voltage regulation circuits and tested them with a multimeter. All three voltage rails show the correct voltages: 12V, 5V, 3.3V. And the 3 indicator lights for each power rail light up. I will update this part when continue the project after my exams.
-<video alt="All power lights" src="../Media/all_power_lights.mp4"></video>
-<video alt="Workspace" src="../Media/workspace.mp4"></video>
+https://github.com/user-attachments/assets/607396c5-5b5b-4540-83f0-784791250e4b
+https://github.com/user-attachments/assets/899d02ef-4616-4838-a46c-5b3104206600
