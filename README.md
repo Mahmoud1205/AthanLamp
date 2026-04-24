@@ -10,3 +10,10 @@ https://github.com/user-attachments/assets/cd089860-c122-4150-9e4c-b0a5cfae7b2e
 The electronic schematic, PCB design, firmware, and soon the physical design of the device, are all made by me.
 
 I would like to keep this main README short, but check out the Hardware and Software folders for more info and implementation details. Both folders have READMEs.
+
+![3D render of the PCB](/Media/pcb3d.png)
+![Schematic of the PCB](/Media/schematic.png)
+![PCB layout](/Media/pcb.png)
+
+## Notes for Stasis
+I bought all of the components I need for the project except for two which are in the `/BOM.csv` file.

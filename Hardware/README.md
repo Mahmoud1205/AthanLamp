@@ -1,7 +1,8 @@
 # Hardware of the Athan Lamp
 This is the part that taught me the most, consumed the most time and energy, and which I enjoyed the most.
 
-This is one of the first big electronics projects which I made.
+## Time spent so far
+The PCB is not fully assembled yet, but so far I spent approximately a month of work designing the hardware, 5 days of PCB fabrication attempts where each day took 6-8 hours of work at the makerspace, and a day of soldering which also took around 6-8 hours. I don't remember when I started this project exactly but I can approximate it to around the middle of March.
 
 ## Planning the hardware
 I began by planning the project and brainstorming it, I wanted a 12V LED strip inside the mosque so it can act as a lamp, and I wanted a loud speaker so it can be heard around the house, and I wanted an external flash chip to store high quality athan audios. In the end I made the following decisions because of some technical and financial limitations:
