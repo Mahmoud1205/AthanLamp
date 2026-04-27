@@ -56,6 +56,3 @@ I would like to keep this main README short, but check out the Hardware and Soft
 |  36 | J5                                 | FTDI_CONNx6          | PinHeader_1x06_P2.54mm_Vertical                    |          1 |
 |  37 | J6                                 | SPEAKER_CONNx2       | SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm        |          1 |
 |  38 | J7                                 | DS3231_CONNx4        | SolderWire-0.1sqmm_1x04_P3.6mm_D0.4mm_OD1mm        |          1 |
-
-## Notes for Stasis
-I bought all of the components I need for the project except for two which are in the `/BOM.csv` file.
