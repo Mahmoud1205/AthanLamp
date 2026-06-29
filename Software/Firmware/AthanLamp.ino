@@ -21,13 +21,6 @@ struct AstroInfo
 {
 	F32 sunDeclination;
 	F32 eqt;
-
-	// uncomment these values for debugging when needed
-	// F32 g;
-	// F32 q;
-	// F32 L;
-	// F32 e;
-	// F32 RA;
 };
 
 struct GregorianDate
@@ -108,12 +101,6 @@ void getAstroInfo(AstroInfo* ioInfo, F32 inJulianDate)
 
 	ioInfo->sunDeclination = asind(sind(e) * sind(L));
 	ioInfo->eqt = q / 15.0f - RA;
-
-	ioInfo->g = g;
-	ioInfo->q = q;
-	ioInfo->L = L;
-	ioInfo->e = e;
-	ioInfo->RA = RA;
 	
 	/**
 	 * HACK: as the year progresses: RA increases by around 1 per day until it reaches
@@ -291,6 +278,11 @@ void loop()
 
 	DateTime now = gRTC.now() + TimeSpan(0, (int8_t)timezone, 0, 0);
 
+	// the hardcoding of 12PM as the hour is not a mistake, it is intentionally
+	// like this because astronomical calculations are the most accurate around
+	// solar noon. this doesnt effect the athan times because they will be accurate
+	// regardless of whether the gregorian date hour is exactly the current
+	// hour or not.
 	GregorianDate curTimeGregorian = {
 		.year = (I32)now.year(),
 		.month = (I32)now.month(),
@@ -306,7 +298,7 @@ void loop()
 
 	F32 curHoursIntoDay = (F32)now.hour() + (((F32)now.minute()) / 60.0f) + (((F32)now.second()) / 3600.0f);
 
-	if (!fajrPlayed && fabsf(gTimes.maghrib - curHoursIntoDay) < 5.0f / 3600.0f)
+	if (!fajrPlayed && fabsf(gTimes.fajr - curHoursIntoDay) < 5.0f / 3600.0f)
 	{
 		fajrPlayed = true;
 
@@ -320,7 +312,7 @@ void loop()
 		}
 	}
 
-	if (!duhrPlayed && fabsf(gTimes.maghrib - curHoursIntoDay) < 5.0f / 3600.0f)
+	if (!duhrPlayed && fabsf(gTimes.duhr - curHoursIntoDay) < 5.0f / 3600.0f)
 	{
 		duhrPlayed = true;
 
@@ -334,7 +326,7 @@ void loop()
 		}
 	}
 
-	if (!asrPlayed && fabsf(gTimes.maghrib - curHoursIntoDay) < 5.0f / 3600.0f)
+	if (!asrPlayed && fabsf(gTimes.asr - curHoursIntoDay) < 5.0f / 3600.0f)
 	{
 		asrPlayed = true;
 
@@ -362,7 +354,7 @@ void loop()
 		}
 	}
 
-	if (!ishaPlayed && fabsf(gTimes.maghrib - curHoursIntoDay) < 5.0f / 3600.0f)
+	if (!ishaPlayed && fabsf(gTimes.isha - curHoursIntoDay) < 5.0f / 3600.0f)
 	{
 		ishaPlayed = true;
 
@@ -379,7 +371,8 @@ void loop()
 	// reset flags at astronomical noon
 	if (now.hour() == 12 && fajrPlayed)
 		fajrPlayed = false;
-	if (now.hour() == 12 && duhrPlayed)
+	// duhr especially resets at night because duhr is at noon time
+	if (now.hour() == 3 && duhrPlayed)
 		duhrPlayed = false;
 	if (now.hour() == 12 && asrPlayed)
 		asrPlayed = false;
