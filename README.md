@@ -3,9 +3,7 @@ Hardware, software, and devlog of the Athan Lamp project.
 
 I recently moved to a home which is far away from a mosque, meaning I cannot hear the athan (Islamic call to prayer) anymore. I could've solve this by installing an athan application on my phone, but I can do better.
 
-So I got the idea of making a device that's placed in my house and can play the athan during the athan time according to my location, this device also acts as a decoration in the shape of a mosque and a lamp. Below is a render I made in Blender to demonstrate the idea.
-https://github.com/user-attachments/assets/cd089860-c122-4150-9e4c-b0a5cfae7b2e
-*The timer in Arabic says: "time until athan"*
+So I got the idea of making a device that's placed in the wall of my house and can play an alarm during the athan time according to my location, this device also acts as a lamp because it controls a LED strip.
 
 The electronic schematic, PCB design, firmware, and soon the physical design of the device, are all made by me.
 
@@ -55,3 +53,4 @@ I would like to keep this main README short, but check out the Hardware and Soft
 |  36 | J5                                 | FTDI_CONNx6          | PinHeader_1x06_P2.54mm_Vertical                    |          1 | $0.019            |
 |  37 | J6                                 | SPEAKER_CONNx2       | SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm        |          1 | $1.13             |
 |  38 | J7                                 | DS3231_CONNx4        | SolderWire-0.1sqmm_1x04_P3.6mm_D0.4mm_OD1mm        |          1 | $1.70             |
+|  38 | N/A                                | PAM8403              | MODULE                                             |          1 | $0.61             |
