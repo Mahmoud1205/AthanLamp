@@ -8,7 +8,7 @@ Hardware, software, and devlog of the Athan Lamp project.
 Video of the athan alarm working at the correct time: https://youtu.be/aE38t-XnRy0
 Video of the LED strip being controlled by the board: https://youtube.com/shorts/xvR4h-AePn8
 
-Note: The current design of the athan lamp is that it is placed inside the wall or hidden somewhere, with the LED strip coming out of it, not in an enclosure. This is why there is no enclosure. The videos of the athan lamp have the PCB outside of a wall because I couldn't drill a hole in the wall.
+## ‼️ Note: The current design of the athan lamp is that it is placed inside the wall or hidden somewhere, with the LED strip coming out of it, not in an enclosure. This is why there is no enclosure. The videos of the athan lamp have the PCB outside of a wall because I couldn't drill a hole in the wall. ‼️
 
 I recently moved to a home which is far away from a mosque, meaning I cannot hear the athan (Islamic call to prayer) anymore. I could've solve this by installing an athan application on my phone, but I can do better.
 
