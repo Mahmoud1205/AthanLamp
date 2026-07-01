@@ -18,6 +18,8 @@ The electronic schematic, PCB design, and firmware, are all made by me.
 
 I would like to keep this main README short, but check out the Hardware and Software folders for more info and implementation details. Both folders have READMEs.
 
+Adafruit's RTC library "RTClib" was used in Arduino IDE.
+
 ![3D render of the PCB](/Media/pcb3d.png)
 ![Schematic of the PCB](/Media/schematic.png)
 ![PCB layout](/Media/pcb.png)
