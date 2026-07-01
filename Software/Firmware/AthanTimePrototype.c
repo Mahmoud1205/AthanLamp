@@ -21,7 +21,6 @@ typedef float F32;
 const F32 lat = 30.033333f;
 const F32 lon = 31.233334f;
 
-// TODO: account for DST
 const F32 timezone = 2.0f; // GMT+2
 
 /// @brief Sun degrees below the horizon to be considered sunrise or sunset.
@@ -245,8 +244,6 @@ void getAthanTimes(AthanTimes* ioTimes, JulianDate inDate)
 
 I32 main(void)
 {
-	// TODO: should the julian date be updated by the day at noon or by the hour ?
-	// if by the day, hardcode .hour to noon (12)
 	GregorianDate curTimeGregorian = {
 		.year = 2026,
 		.month = 4,
