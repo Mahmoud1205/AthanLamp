@@ -5,8 +5,7 @@ Hardware, software, and devlog of the Athan Lamp project.
 ![Athan Lamp Built](/Media/AthanLampBuilt.jpeg)
 ![Athan Lamp LED](/Media/AthanLampLED.jpeg)
 
-Video of the athan alarm working at the correct time: https://youtu.be/aE38t-XnRy0
-Video of the LED strip being controlled by the board: https://youtube.com/shorts/xvR4h-AePn8
+Video explaining and showcasing the Athan Lamp working: https://youtu.be/dJdODF0ZjJA?si=jDMs8l0Gtc6o6wYE
 
 ## ‼️ Note: The current design of the athan lamp is that it is placed inside the wall or hidden somewhere, with the LED strip coming out of it, not in an enclosure. This is why there is no enclosure. The videos of the athan lamp have the PCB outside of a wall because I couldn't drill a hole in the wall. ‼️
 
