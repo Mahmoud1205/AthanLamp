@@ -8,6 +8,14 @@
  * 4. https://quasar.as.utexas.edu/BillInfo/JulianDatesG.html
  */
 
+/**
+ * TODO:
+ * fix LED switch delay
+ * 	replace alarm sound with athan sound
+ *		add EN25Q32 code
+ * clean the code, organize it
+ */
+
 #include <Wire.h>
 #include <RTClib.h>
 #include <stdio.h>
@@ -211,6 +219,7 @@ void getAthanTimes(AthanTimes* ioTimes, JulianDate inDate)
 	ioTimes->duhr = 12.0f + timezone - (lon / 15.0f) - EqT;
 	ioTimes->asr = ioTimes->duhr + getTimeFromNoonToShadowLength(&ai);
 	// 1m is added to maghrib and isha for safety
+	// TODO: consider 15s or 30s instead of 60s
 	ioTimes->maghrib = ioTimes->duhr + getTimeFromMidDayToAngle(&ai, SUNSET_CONST) + (1.0f / 60.0f);
 	ioTimes->isha = ioTimes->duhr + getTimeFromMidDayToAngle(&ai, EGAS_ISHA_ANGLE) + (1.0f / 60.0f);
 	ioTimes->fajr = ioTimes->duhr - getTimeFromMidDayToAngle(&ai, EGAS_FAJR_ANGLE);
@@ -298,6 +307,8 @@ void loop()
 
 	F32 curHoursIntoDay = (F32)now.hour() + (((F32)now.minute()) / 60.0f) + (((F32)now.second()) / 3600.0f);
 
+	// TODO: clean this part; duplicate code
+
 	if (!fajrPlayed && fabsf(gTimes.fajr - curHoursIntoDay) < 5.0f / 3600.0f)
 	{
 		fajrPlayed = true;
@@ -368,6 +379,7 @@ void loop()
 		}
 	}
 
+	// TODO: review or clean this part
 	// reset flags at astronomical noon
 	if (now.hour() == 12 && fajrPlayed)
 		fajrPlayed = false;
