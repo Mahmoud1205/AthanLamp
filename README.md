@@ -9,7 +9,6 @@ Before I start this README, I have to thank Hack Club for sponsoring this projec
 
 I also would like to thank the people of Fab Lab Egypt for supporting and helping me in this project in so many ways.
 
-
 ## Why make this project?
 I recently moved to a home which is far away from a mosque, meaning I cannot hear the athan (Islamic call to prayer) anymore. I could've solve this by installing an athan application on my phone, but I can do better.
 
