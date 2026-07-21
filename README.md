@@ -17,4 +17,4 @@ I would like to keep this main README short, but check out the `Journal.md` file
 
 ![3D render of the PCB](/Media/pcb3d.png)
 
-[Showcase of the Athan Lamp project (for Hack Club Stasis)](https://youtu.be/jqDg8A2GP44)
+[Showcase of the Athan Lamp project (ignore this; it's only for Hack Club Stasis qualification)](https://youtu.be/jqDg8A2GP44)
