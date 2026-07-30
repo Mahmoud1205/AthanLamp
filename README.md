@@ -5,7 +5,7 @@
 Hardware, software, and devlog of the Athan Lamp project.
 
 ## Special Thanks <3
-Before I start this README, I have to thank Hack Club for sponsoring this project. Specifically, Hack Club Stasis and all of the people who were involved in it. I am so grateful for this organization, and I can't describe my appreciation to them with words. Thanks Hack Club! :)
+I have to thank Hack Club for sponsoring this project. Specifically, Hack Club Stasis and all of the people who were involved in it. I am so grateful for this organization, and I can't describe my appreciation to them with words. Thanks Hack Club! :)
 
 I also would like to thank the people of Fab Lab Egypt for supporting and helping me in this project in so many ways.
 
